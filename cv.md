@@ -13,6 +13,7 @@ In addition to the basic theoretical knowledge obtained at the university, I rea
 To achieve this goal, I chose the profession as a frontend developer. I am ready to spend much time and desire for this.
 
 > Learn, learn and once again, learn!
+
 > The great aim of education is not knowledge but action.
 
 ## Skills
@@ -43,3 +44,15 @@ function descendingOrder(n){
     return Number(array.join(''));
 }
 ```
+
+## Education
+
+* **University**: National Research Lobachevsky State University of Nizhny Novgorod, 
+fundamental computer science and information technology
+* **Courses**:
+    * [web development - start](https://stepik.org/course/114109/promo)
+    * [python for everybody (py4e)](https://www.py4e.com/lessons)
+
+## Landuages
+* Russian - native speaker
+* English - A2
