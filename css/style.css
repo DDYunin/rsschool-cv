@@ -1,0 +1,43 @@
+/* Header */
+.header {
+  background-color: azure;
+}
+
+.nav-menu__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-menu__item {
+  font-size: 18px;
+  padding: 20px 15px;
+}
+
+/* Main */
+.main-section {
+  background-color: blanchedalmond;
+}
+
+
+/* Footer */
+.footer {
+  background-color: aqua;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Base classes */
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
