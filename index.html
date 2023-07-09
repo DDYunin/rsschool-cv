@@ -13,27 +13,112 @@
     <header class="header">
         <nav class="nav-menu container">
             <ul class="nav-menu__list">
-                <li class="nav-menu__item"><a class="link" href="">About me</a></li>
-                <li class="nav-menu__item"><a class="link" href="">Contact</a></li>
-                <li class="nav-menu__item"><a class="link" href="">Skills</a></li>
-                <li class="nav-menu__item"><a class="link" href="">Code Example</a></li>
-                <li class="nav-menu__item"><a class="link" href="">Education</a></li>
-                <li class="nav-menu__item"><a class="link" href="">Landuages</a></li>
+                <li class="nav-menu__item"><a class="link" href="#about-me">About me</a></li>
+                <li class="nav-menu__item"><a class="link" href="#contact">Contact</a></li>
+                <li class="nav-menu__item"><a class="link" href="#skills">Skills</a></li>
+                <li class="nav-menu__item"><a class="link" href="#code-example">Code Example</a></li>
+                <li class="nav-menu__item"><a class="link" href="#education">Education</a></li>
+                <li class="nav-menu__item"><a class="link" href="#languages">Landuages</a></li>
             </ul>
         </nav>
     </header>
     <!-- Главный контент сайта -->
-    <main class="main-section ">
-        <div class="container">
+    <main class="main-section">
+        <div class="container main-section__wrapper">
             <div class="left-wrapper">
-                <div>
-                    <img src="" alt="It is my foto">
+                <div >
+                    <img class="main-section__foto" src="img/my-foto.jpg" alt="It is my foto">
                 </div>
-                <section></section>
-                <section></section>
+                <section class="main-section__contact" id="contact">
+                    <h2 class="title-2">Contact</h2>
+                    <ul class="main-section__contact-list">
+                        <li class="main-section__contact-item text text_white">
+                            Addres:
+                            <br>
+                            Nizhny Novgorod, Russia
+                        </li>
+                        <li class="main-section__contact-item text text_white">
+                            Email:
+                            <br>
+                            <a class="link" href="mailto:DaniilUnin2002@yandex.ru">DaniilUnin2002@yandex.ru</a>
+                        </li>
+                        <li class="main-section__contact-item text text_white">
+                            Telegram:
+                            <br>
+                            <a class="link" href="https://t.me/DDYunin">@DDYunin</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="main-section__education" id="education">
+                    <h2 class="title-2">Education</h2>
+                    <ul>
+                        <li class="text main-section__education-item">
+                            <span class="title-3">University:</span>
+                            <br>
+                            National Research Lobachevsky State University of Nizhny Novgorod, 
+                            fundamental computer science and information technology
+                        </li>
+                        <li class="title-3">Courses:
+                            <ul>
+                                <li>
+                                    <a class="link" href="https://stepik.org/course/114109/promo">web development - start</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="https://www.py4e.com/lessons">python for everybody (py4e)</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section class="main-section__languages" id="languages">
+                    <h2 class="title-2">Landuages</h2>
+                    <ul>
+                        <li class="text">Russian - native speaker</li>
+                        <li class="text">English - A2</li>
+                    </ul>
+                </section>
             </div>
             <div class="right-wrapper">
-
+                <section class="main-section__performance" id="performance">
+                    <h1 class="title-1">Yunin Daniil</h1>
+                    <h2 class="title-2">Front-End developer</h2>
+                </section>
+                <section class="main-section__about-me" id="about-me">
+                    <h2 class="title-2">About me</h2>
+                    <p class="text">I am 21 years old, I am a student of UNN. I am learning to be a software engineer.
+I have some experience working on a study project in a team with subsequent performance in the competition of projects.
+In addition to the basic theoretical knowledge obtained at the university, I really want to master the practical skills of developing.
+To achieve this goal, I chose the profession as a frontend developer. I am ready to spend much time and desire for this.</p>
+                </section>
+                <section class="main-section__skills" id="skills">
+                    <h2 class="title-2">Skills</h2>
+                    <ul>
+                        <li class="main-section__skills-item">HTML</li>
+                        <li class="main-section__skills-item">CSS (SASS/SCSS, BEM)</li>
+                        <li class="main-section__skills-item">JavaScript (basic)</li>
+                        <li class="main-section__skills-item">Git/GitHub</li>
+                        <li class="main-section__skills-item">Figma (for web development)</li>
+                        <li class="main-section__skills-item">C/C++ (basic), Python (basic), C# (basic)</li>
+                        <li class="main-section__skills-item">Editors: VSCode, VS</li>
+                    </ul>
+                </section>
+                <section class="main-section__code-example" id="code-example">
+                    <h2 class="title-2">Code Example</h2>
+                    <pre><code class="code" data-language="javascript">function descendingOrder(n){
+                        let array = []
+                        let nCopy = n
+                        while (nCopy >= 0) {
+                            let digit = nCopy % 10
+                            array.push(digit)
+                            nCopy = Math.floor(nCopy / 10)
+                            if (nCopy === 0) {
+                                break
+                            }
+                        }
+                        array.sort( (a,b) => (a &lt; b)? 1 : -1)
+                        return Number(array.join(''));
+                    }</code></pre>
+                </section>
             </div>
         </div>
     </main>
@@ -41,13 +126,13 @@
     <footer class="footer">
         <div class="container">
             <ul class="footer__list">
-                <li class="footer__item"><a href="">
-                    <img src="" alt="Author's GitHub">
+                <li class="footer__item"><a class="link" href="https://github.com/DDYunin">
+                    <img class="footer__img" src="img/github-mark-white.png" alt="Author's GitHub">
                 </a></li>
                 <li class="footer__item">2023</li>
                 <li class="footer__item">
-                    <a href="">
-                        <img src="" alt="RS School">
+                    <a class="link" href="https://rs.school/js/">
+                        <img class="footer__img" src="img/rs_school.png" alt="RS School">
                     </a>
                 </li>
             </ul>
